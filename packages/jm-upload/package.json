@@ -1,0 +1,35 @@
+{
+  "name": "jm-upload",
+  "version": "1.0.0",
+  "description": "general upload service",
+  "main": "./lib/index",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jm-root/upload.git"
+  },
+  "keywords": [
+    "javascript",
+    "upload"
+  ],
+  "author": {
+    "name": "Jeff YU"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jm-root/upload/issues"
+  },
+  "homepage": "https://github.com/jm-root/upload",
+  "dependencies": {
+    "fs-extra": "^3.0.1",
+    "jm-ms-wrapper": "^1.0.1"
+  },
+  "devDependencies": {
+    "jest": "^22.4.3"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}

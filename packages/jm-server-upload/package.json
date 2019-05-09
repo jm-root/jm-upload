@@ -1,0 +1,25 @@
+{
+  "name": "jm-server-upload",
+  "version": "2.0.0",
+  "description": "upload plugin for jm-server",
+  "main": "./lib/index",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jm-root/upload"
+  },
+  "keywords": [
+    "javascript",
+    "jm-server-upload"
+  ],
+  "author": {
+    "name": "Jeff YU"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jm-root/upload/issues"
+  },
+  "homepage": "https://github.com/jm-root/upload",
+  "dependencies": {
+    "multer": "^1.4.1"
+  }
+}
