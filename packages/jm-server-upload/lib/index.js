@@ -8,14 +8,16 @@ function genId () {
 }
 
 module.exports = function (opts = {}) {
+  const { upload_dir: uploadDir = process.cwd() + '/uploads', upload_prefix: uploadPrefix = '', prefix = '/', fields } = opts
   const defaultStorage = multer.diskStorage({
+    destination: function (req, file, cb) {
+      cb(null, `${uploadDir}${uploadPrefix}`)
+    },
     filename: function (req, file, cb) {
       cb(null, genId() + path.extname(file.originalname))
     }
   })
 
-  const { upload_dir: uploadDir = process.cwd() + '/uploads', upload_prefix: uploadPrefix = '', prefix = '/', fields } = opts
-  opts.dest = uploadDir + uploadPrefix
   opts.storage || (opts.storage = defaultStorage)
 
   const router = express.Router()

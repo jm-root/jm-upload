@@ -1,6 +1,6 @@
 {
   "name": "jm-server-upload",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "upload plugin for jm-server",
   "main": "./lib/index",
   "repository": {
