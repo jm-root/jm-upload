@@ -1,6 +1,10 @@
 .idea
+.svn
 node_modules
+docs
+logs
+yarn.lock
+development.js
 package-lock.json
 lerna-debug.log
 uploads
-logs

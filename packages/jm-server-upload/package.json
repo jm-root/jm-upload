@@ -1,6 +1,6 @@
 {
   "name": "jm-server-upload",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "upload plugin for jm-server",
   "main": "./lib/index",
   "repository": {
@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/jm-root/upload",
   "dependencies": {
-    "bson": "^3.0.2",
-    "multer": "^1.4.1"
+    "bson": "^4.0.4",
+    "multer": "^1.4.2"
   }
 }
