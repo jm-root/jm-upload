@@ -1,11 +1,13 @@
-const event = require('jm-event')
-const t = require('../locale')
+const { Service } = require('jm-server')
 
-class Service {
+module.exports = class extends Service {
   constructor (opts = {}) {
-    event.enableEvent(this)
-    this.t = t
+    super(opts)
+    this.emit('ready')
+  }
+
+  router (opts) {
+    const dir = `${__dirname}/../router`
+    return this.loadRouter(dir, opts)
   }
 }
-
-module.exports = Service
