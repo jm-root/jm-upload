@@ -21,6 +21,7 @@
   "homepage": "https://github.com/jm-root/upload",
   "dependencies": {
     "bson": "^4.0.4",
+    "fs-extra": "^9.0.0",
     "multer": "^1.4.2"
   }
 }
